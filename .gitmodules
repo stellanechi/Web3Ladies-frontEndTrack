@@ -1,0 +1,3 @@
+[submodule "0x00-html_css"]
+	path = 0x00-html_css
+	url = https://github.com/stellanechi/Web3Ladies-frontEndTrack.git
