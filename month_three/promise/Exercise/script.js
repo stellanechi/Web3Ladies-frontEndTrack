@@ -40,3 +40,19 @@ delayedPromise()
 
 // Exercise 5: Fetching Data from a Public API
 // Instructions: Use fetch to get a list of posts from the JSONPlaceholder API. Handle the response and log the titles of the first 5 posts.
+// async function randomQuote() {
+//   const res = await fetch("https://api.quotable.io/random");
+//   const data = await res.json();
+//   console.log(data.content); // Log the quote to the console
+// }
+
+// randomQuote(); // Call the function to fetch and log the quote
+
+function errorCatch() {
+  fetch("https://api.quotable.io/random")
+    .then((response) => response.json())
+    .catch((err) => {
+      console.log(err);
+    });
+}
+errorCatch();
